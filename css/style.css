@@ -88,6 +88,7 @@ main .payment_button {
   text-decoration: none;
   width: 100%;
   text-align: center;
+  font-weight: 700;
   background-color: hsl(245deg, 75%, 52%);
   color: hsl(0deg, 0%, 100%);
   padding: 1rem;
@@ -133,5 +134,20 @@ footer {
 @media screen and (min-width: 500px) {
   body {
     background-image: url("../images/pattern-background-desktop.svg");
+  }
+  main {
+    width: 450px;
+  }
+  main .container {
+    padding: 2rem 3rem;
+  }
+  main .plan_section {
+    padding: 1.5rem 1rem;
+  }
+  main .plan_section .plan {
+    margin-right: 8rem;
+  }
+  main .payment_button {
+    margin: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
