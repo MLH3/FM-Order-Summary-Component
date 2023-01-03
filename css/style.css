@@ -1,0 +1,137 @@
+body {
+  background-color: hsl(225deg, 100%, 94%);
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: repeat-x;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  width: 320px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+main .hero_image {
+  width: 100%;
+}
+main h1 {
+  margin: 0;
+  color: hsl(223deg, 47%, 23%);
+  font-size: 20px;
+  font-weight: 900;
+}
+main p {
+  text-align: center;
+  color: hsl(224deg, 23%, 55%);
+  line-height: 1.5;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+main .plan_section {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+}
+main .plan_section .music {
+  transition: 0.3s ease-in-out;
+}
+main .plan_section .music:hover {
+  scale: 1.05;
+  rotate: -5deg;
+  transition: 0.3s ease-in-out;
+}
+main .plan_section .plan {
+  margin-right: 3rem;
+}
+main .plan_section .plan_time,
+main .plan_section .plan_price {
+  margin: 0;
+}
+main .plan_section .plan_time {
+  font-weight: 900;
+  font-size: 14px;
+  color: hsl(223deg, 47%, 23%);
+}
+main .plan_section .plan_price {
+  font-size: 14px;
+  color: hsl(224deg, 23%, 55%);
+}
+main .plan_section .change {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(245deg, 75%, 52%);
+  transition: 0.1s ease-in-out;
+}
+main .plan_section .change:hover {
+  scale: 1.05;
+  transition: 0.1s ease-in-out;
+}
+main .payment_button {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0 15px 15px hsla(245deg, 75%, 52%, 0.25);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+main .payment_button:hover {
+  background-color: hsl(245deg, 67%, 42%);
+  box-shadow: 0 10px 15px hsla(245deg, 75%, 52%, 0.25);
+  transform: scale(0.95);
+  transition: 0.3s ease-in-out;
+}
+main .cancel_order {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(224deg, 23%, 55%);
+}
+main .cancel_order:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}/*# sourceMappingURL=style.css.map */

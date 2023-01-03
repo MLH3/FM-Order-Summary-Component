@@ -1,0 +1,153 @@
+@use "colors";
+
+body {
+  background-color: colors.$pale_blue;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: repeat-x;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  width: 320px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: colors.$white;
+
+  .hero_image {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0;
+    color: colors.$dark_blue;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  p {
+    text-align: center;
+    color: colors.$desaturated_blue;
+    line-height: 1.5;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .plan_section {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: colors.$very_pale_blue;
+
+    .music {
+      transition: 0.3s ease-in-out;
+      &:hover {
+        scale: (1.05);
+        rotate: (-5deg);
+        transition: 0.3s ease-in-out;
+      }
+    }
+
+    .plan {
+      margin-right: 3rem;
+    }
+
+    .plan_time,
+    .plan_price {
+      margin: 0;
+    }
+
+    .plan_time {
+      font-weight: 900;
+      font-size: 14px;
+      color: colors.$dark_blue;
+    }
+
+    .plan_price {
+      font-size: 14px;
+      color: colors.$desaturated_blue;
+    }
+
+    .change {
+      font-size: 13px;
+      font-weight: 700;
+      color: colors.$bright_blue;
+      transition: 0.1s ease-in-out;
+
+      &:hover {
+        scale: (1.05);
+        transition: 0.1s ease-in-out;
+      }
+    }
+  }
+
+  .payment_button {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    background-color: colors.$bright_blue;
+    color: colors.$white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 15px 15px hsla(245, 75%, 52%, 0.25);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: colors.$active;
+      box-shadow: 0 10px 15px hsla(245, 75%, 52%, 0.25);
+      transform: scale(0.95);
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .cancel_order {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: colors.$desaturated_blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
